@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Prediction</title>
+    <style>
+        .form-box {
+            width: 80%;
+            margin: 80px auto;
+            padding: 20px;
+            border: 1px solid #ced4da; /* Bootstrap default border color */
+            border-radius: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-box">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="nitrogen" class="form-label">Nitrogen</label>
+                            <input type="number" class="form-control" id="nitrogen" placeholder="Enter value of Nitrogen " name="N">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phosphorus" class="form-label">Phosphorus</label>
+                            <input type="number" class="form-control" id="phosphorus" placeholder="Enter value of Phosphorus" name="P">
+                        </div>
+                        <div class="mb-3">
+                            <label for="potassium" class="form-label">Potassium</label>
+                            <input type="number" class="form-control" id="potassium" placeholder="Enter value of Potassium" name="K">
+                        </div>
+                        <div class="mb-3">
+                            <label for="temperature" class="form-label">Temperature</label>
+                            <input type="number" class="form-control" id="temperature" placeholder="Enter Temperature" name="temperature">
+                        </div>
+                        <div class="mb-3">
+                            <label for="humidity" class="form-label">Humidity</label>
+                            <input type="number" class="form-control" id="humidity" placeholder="Enter Humidity" name="humidity">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ph" class="form-label">Ph</label>
+                            <input type="number" class="form-control" id="ph" placeholder="Enter value of ph" name="ph">
+                        </div>
+                        <div class="mb-3">
+                            <label for="rf" class="form-label">Rainfall</label>
+                            <input type="number" class="form-control" id="rf" placeholder="Enter value of rainfall cm" name="rainfall">
+                        </div>
+                        <div class="mb-3 d-none">
+                            <label for="crop" class="form-label">Crop</label>
+                            <input type="text" class="form-control" id="crop" placeholder="Enter name of crop" name="crop">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

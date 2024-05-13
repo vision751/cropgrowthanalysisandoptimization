@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Crop growth analytics and optimization</title>
+
+    <style>
+        /* Add styles to the images container */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            /* Gap between images */
+            width: 90%;
+            /* Adjusted width */
+            margin-top: 20px;
+            /* Add some space between the header and images */
+        }
+
+        /* Set width for the first two images and the next two */
+        .image-container img:nth-child(-n+6) {
+            width: 90%;
+            /* Cover the entire column */
+            max-width: none;
+            /* Ensure the image width is not restricted */
+        }
+
+        /* Add styles to all images */
+        .image-container img {
+            max-width: 90%;
+            /* Ensure responsiveness */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 5px;
+            /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Box shadow */
+            transition: transform 0.3s ease-in-out;
+            /* Smooth transition */
+        }
+
+        /* Hover effect */
+        .image-container img:hover {
+            transform: scale(1.05);
+            /* Scale up slightly on hover */
+        }
+        .training{
+            color: #2d8633; 
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: bold; 
+            font-size: 24px; 
+            margin-bottom: 10px; 
+        }
+        
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="home" id="home">
+        <nav>
+            <div class="nav-logo">
+                <i class="ri-suitcase-line"></i>
+                <h2 id="company"> Project
+                </h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="pages">Home</a></li>
+                    <li><a href="#about" class="pages">About</a></li>
+                    <li><a href="training_results.html" class="pages">Other Training Results</a></li>
+                    <li><a href="#tour" class="pages">Tour</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <i class="ri-moon-line" id="moon"></i>
+            <i class="ri-sun-line" id="sun"></i>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-apps-line"></i>
+            </div>
+        </nav>
+        <div class="header" id="header">
+            <div class="content" style="text-align: center">
+                <h4 id="title"> <span>Crop growth analytics</span> <small>and optimization</small> </h4>
+                <p>Maximize yield, <br> Minimize resources <br> - Experience the future of agriculture </p>
+                <button>Learn More!<i class="ri-arrow-right-line"></i></button>
+            </div>
+            <img src="/static/basket-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <!-- about -->
+    <div class="about" id="about">
+        <div class="content">
+            <img src="/static/fruit1-removebg-preview.png" alt="">
+            <p> <span>Overview</span> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>laboriosam earum
+                quae pariatur quia labore aliquam, deleniti ipsam odio <br> consectetur adipisicing elit. Asperiores
+                adipisci at qui! Libero eos facilis. </p>
+        </div>
+        <div class="content">
+            <p> <span>Why Choose Us?</span> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>laboriosam
+                earum quae pariatur quia labore aliquam, deleniti ipsam odio <br> consectetur adipisicing elit.
+                Asperiores adipisci at qui! Libero eos facilis. </p>
+            <img src="/static/fruit1-removebg-preview.png" id="special">
+        </div>
+        <div class="training">
+            <span> <h2> Training Results</h2></span>
+        </div>
+        <div class="image-container">
+            <img src="/static/viz/accuracy.png" alt="">
+            <img src="/static/viz/accuracy_comparison.png" alt="">
+            <img src="/static/viz/confusion_matrix.png" alt="">
+            <img src="/static/viz/pair_plot.png" alt="">
+            <img src="/static/viz/heat_map.png" alt="">
+            <img src="/static/viz/plot.png" alt="">
+            <!-- <img src="/static/viz/predictedvs_actual.png" alt=""> -->
+            <!-- <img src="/static/viz/bottom_5_crop_feature_wise_requirements.png" alt=""> -->
+            <!-- <img src="/static/viz/testingvs_training_accuracy.png" alt=""> -->
+            <!-- <img src="/static/viz/top_5_crops_recuiring_N.png" alt=""> -->
+        </div>
+    </div>
+    <script src="/static/main.js"></script>
+
+</body>
+
+</html>
